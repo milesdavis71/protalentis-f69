@@ -1,0 +1,24 @@
+---
+title: Partnerek, támogatók
+---
+{{>title}}
+<div class="grid-x grid-margin-x" data-equalizer data-equalize-on="medium">
+    {{#each global.partnerek}}
+    <div class="cell small-6 medium-3 large-3">
+        <div class="cell">
+            <div class="card" data-equalizer-watch>
+                <img class="float-center" style="margin-top: 1rem;" src="{{root}}assets/img/logo/{{img}}.jpg">
+                <p class="text-center">{{title}}</p>
+                <button class="button hollow button float-center"><a href="#" data-toggle="galleryModal{{id}}">További információk</a></button>
+            </div>
+        </div><!-- end cell -->
+        <!-- modal -->
+        <div class="medium js-gallery-reveal gallery-reveal reveal" id="galleryModal{{id}}" data-reveal data-overlay="true">
+            <p>{{> markdown_partner_content page=img}}</p>
+            <button class="close-button" data-close aria-label="Close reveal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div><!-- end  modal -->
+    </div>
+    {{/each}}
+</div>

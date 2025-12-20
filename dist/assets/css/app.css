@@ -4081,7 +4081,7 @@ tbody td {
 
 tbody tr:nth-child(even) {
   border-bottom: 0;
-  background-color: rgb(241.3, 241.3, 241.3);
+  background-color: #e6f4ff;
 }
 
 table.unstriped tbody {
@@ -4210,7 +4210,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   position: relative;
   margin: 0 0 1rem 0;
   padding: 1rem;
-  border: 1px solid rgba(10, 10, 10, 0.25);
+  border: 0px solid rgba(10, 10, 10, 0.25);
   border-radius: 0;
 }
 .callout > :first-child {

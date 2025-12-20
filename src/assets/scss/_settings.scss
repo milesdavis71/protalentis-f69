@@ -334,7 +334,8 @@ $buttongroup-radius-on-each: true;
 
 $callout-background: $white;
 $callout-background-fade: 85%;
-$callout-border: 1px solid rgba($black, 0.25);
+// $callout-border: 1px solid rgba($black, 0.25);
+$callout-border: 0px solid rgba($black, 0.25);
 $callout-margin: 0 0 1rem 0;
 $callout-sizes: (
   small: 0.5rem,
@@ -809,7 +810,8 @@ $table-hover-scale: 2%;
 $table-row-hover: color.adjust($table-background, $lightness: -$table-hover-scale);
 $table-row-stripe-hover: color.adjust($table-background, $lightness: -($table-color-scale + $table-hover-scale));
 $table-is-striped: true;
-$table-striped-background: smart-scale($table-background, $table-color-scale);
+// $table-striped-background: smart-scale($table-background, $table-color-scale);
+$table-striped-background: #e6f4ff;
 $table-stripe: even;
 $table-head-background: smart-scale($table-background, $table-color-scale * 0.5);
 $table-head-row-hover: color.adjust($table-head-background, $lightness: -$table-hover-scale);

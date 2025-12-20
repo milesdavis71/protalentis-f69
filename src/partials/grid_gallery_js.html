@@ -1,0 +1,211 @@
+---
+<style>
+  /* Thumbnail képek: töltsék ki a cellát, szépen legyenek rácsban */
+  .gallery-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .gallery-grid a.js-lightbox-item {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* Lightbox overlay */
+  .simple-lightbox-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;               /* alapból rejtett */
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+
+  .simple-lightbox-inner {
+    position: relative;
+    max-width: 96vw;
+    max-height: 96vh;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  }
+
+  .simple-lightbox-image-wrapper {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .simple-lightbox-image {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+  }
+
+  .simple-lightbox-close,
+  .simple-lightbox-prev,
+  .simple-lightbox-next {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #ffffff;
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding: 0.2rem 0.6rem;
+    line-height: 1;
+    transition: background 0.15s ease;
+  }
+
+  .simple-lightbox-close:hover,
+  .simple-lightbox-prev:hover,
+  .simple-lightbox-next:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .simple-lightbox-close {
+    top: 0.25rem;
+    right: 0.5rem;
+  }
+
+  .simple-lightbox-prev {
+    left: -3rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .simple-lightbox-next {
+    right: -3rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @media (max-width: 640px) {
+    .simple-lightbox-prev {
+      left: 0.5rem;
+    }
+    .simple-lightbox-next {
+      right: 0.5rem;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    // Ne inicializáljuk többször, ha a partial több helyen is be van húzva
+    if (window.__simpleLightboxInitialized) return;
+    window.__simpleLightboxInitialized = true;
+
+    function initGalleries() {
+      const galleries = document.querySelectorAll('[data-gallery]');
+      if (!galleries.length) return;
+
+      let overlay, overlayImage, btnClose, btnPrev, btnNext;
+      let currentItems = [];
+      let currentIndex = 0;
+
+      function createOverlay() {
+        overlay = document.createElement('div');
+        overlay.className = 'simple-lightbox-overlay';
+        overlay.innerHTML = `
+          <div class="simple-lightbox-inner">
+            <button class="simple-lightbox-close" aria-label="Bezárás">&times;</button>
+            <button class="simple-lightbox-prev" aria-label="Előző">&#10094;</button>
+            <button class="simple-lightbox-next" aria-label="Következő">&#10095;</button>
+            <div class="simple-lightbox-image-wrapper">
+              <img class="simple-lightbox-image" src="" alt="">
+            </div>
+          </div>
+        `;
+        document.body.appendChild(overlay);
+
+        overlayImage = overlay.querySelector('.simple-lightbox-image');
+        btnClose     = overlay.querySelector('.simple-lightbox-close');
+        btnPrev      = overlay.querySelector('.simple-lightbox-prev');
+        btnNext      = overlay.querySelector('.simple-lightbox-next');
+
+        // háttérre vagy X-re kattintás → zárás
+        overlay.addEventListener('click', function (e) {
+          if (e.target === overlay || e.target === btnClose) {
+            hideOverlay();
+          }
+        });
+
+        btnPrev.addEventListener('click', function (e) {
+          e.stopPropagation();
+          showPrev();
+        });
+
+        btnNext.addEventListener('click', function (e) {
+          e.stopPropagation();
+          showNext();
+        });
+
+        // billentyűk: ESC / bal / jobb
+        document.addEventListener('keydown', function (e) {
+          if (!overlay || overlay.style.display !== 'flex') return;
+          if (e.key === 'Escape') hideOverlay();
+          if (e.key === 'ArrowLeft') showPrev();
+          if (e.key === 'ArrowRight') showNext();
+        });
+      }
+
+      function showOverlay(index, items) {
+        currentItems = items;
+        currentIndex = index;
+
+        const item = currentItems[currentIndex];
+        if (!item) return;
+
+        const full = item.dataset.full || item.getAttribute('href');
+        const alt  = item.querySelector('img')?.getAttribute('alt') || '';
+
+        overlayImage.src = full;
+        overlayImage.alt = alt;
+
+        // gombok láthatósága
+        btnPrev.style.display = (currentIndex === 0) ? 'none' : 'block';
+        btnNext.style.display = (currentIndex === currentItems.length - 1) ? 'none' : 'block';
+
+        overlay.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function hideOverlay() {
+        overlay.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+
+      function showPrev() {
+        if (!currentItems.length) return;
+        if (currentIndex > 0) {
+          showOverlay(currentIndex - 1, currentItems);
+        }
+      }
+
+      function showNext() {
+        if (!currentItems.length) return;
+        if (currentIndex < currentItems.length - 1) {
+          showOverlay(currentIndex + 1, currentItems);
+        }
+      }
+
+      createOverlay();
+
+      galleries.forEach(function (gallery) {
+        const items = Array.from(gallery.querySelectorAll('.js-lightbox-item'));
+
+        items.forEach(function (item, index) {
+          item.addEventListener('click', function (e) {
+            e.preventDefault();
+            showOverlay(index, items);
+          });
+        });
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initGalleries);
+    } else {
+      initGalleries();
+    }
+  })();
+</script>

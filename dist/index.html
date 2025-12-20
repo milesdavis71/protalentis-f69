@@ -1,167 +1,652 @@
-
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Pro Talentis Universitas Alapítvány</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
     <link rel="stylesheet" href="assets/css/app.css">
-  </head>
+</head>
+
 <body>
+    <style>
+    blockquote {
+        color: #0078d4;
+        border-left: 4px solid currentColor;
+        font-size: 100%;
+        padding-left: 1rem;
+    }
 
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-          <h1>Welcome to Foundation</h1>
-        </div>
-      </div>
+    a {
+        text-decoration: underline;
+    }
 
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-          <div class="callout">
-            <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-            <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-            <p>Once you've exhausted the fun in this document, you should check out:</p>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 medium-push-2 cell">
-                <p><a href="https://get.foundation/sites/docs/">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-              </div>
-              <div class="large-4 medium-4 medium-push-2 cell">
-                <p><a href="https://github.com/foundation/foundation-emails/discussions">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 medium-push-2 cell">
-                <p><a href="http://github.com/foundation/foundation-sites">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-              </div>
-              <div class="large-4 medium-4 medium-pull-2 cell">
-                <p><a href="https://twitter.com/FoundationCSS">@FoundationCSS</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-x grid-padding-x">
-        <div class="large-8 medium-8 cell">
-          <h5>Here&rsquo;s your basic grid:</h5>
-          <!-- Grid Example -->
-
-          <div class="grid-x grid-padding-x">
-            <div class="large-12 cell">
-              <div class="primary callout">
-                <p><strong>This is a twelve cell section in a grid-x.</strong> Each of these includes a div.callout element so you can see where the cell are - it's not required at all for the grid.</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x">
-            <div class="large-6 medium-6 cell">
-              <div class="primary callout">
-                <p>Six cell</p>
-              </div>
-            </div>
-            <div class="large-6 medium-6 cell">
-              <div class="primary callout">
-                <p>Six cell</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x">
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-          </div>
-
-          <hr />
-
-          <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-          <form>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-12.cell" />
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.cell" />
-              </div>
-              <div class="large-4 medium-4 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.cell" />
-              </div>
-              <div class="large-4 medium-4 cell">
-                <div class="grid-x">
-                  <label>Input Label</label>
-                  <div class="input-group">
-                    <input type="text" placeholder="small-9.cell" class="input-group-field" />
-                    <span class="input-group-label">.com</span>
-                  </div>
+    a:hover {
+        color: orange;
+    }
+    </style>
+    <div class="grid-y medium-grid-frame">
+    <p></p>    <div class="cell medium-auto medium-cell-block-container">
+        <div class="grid-x grid-padding-x">
+            <div class="cell medium-3 medium-cell-block-y">
+                <!-- <div class="title-bar" data-responsive-toggle="example-animated-menu" data-hide-for="medium">
+                    <button class="menu-icon" type="button" data-toggle></button>
+                    <div class="title-bar-title">Menu</div>
+                </div> -->
+                <!-- <div class="top-bar" id="example-animated-menu" data-animate="hinge-in-from-top spin-out">
+                    <div class="top-bar-left">
+                 -->
+                <!-- <ul class=" dropdown menu" data-dropdown-menu>
+                    <li class="menu-text">Site Title</li>
+                    <li><a href="index.html">Főoldal</a>
+                    </li>
+                    <li><a href="alapitvany.html">Az alapítványról</a>
+                        <ul class="menu vertical nested">
+                            <li > <a href="celkituzes.html">Célkitűzés</a></li>
+                            <li ><a href="tevekenyseg.html">Tevékenység</a></li>
+                            <li ><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="bemutatkozas.html">Az SZTE Junior Akadémia</a>
+                    </li>
+                    <li><a href="szegedi_tehetseggondozo_tanacs.html">A Szegedi Tehetséggondozó Tanács</a>
+                    </li>
+                    <li><a href="partnerek.html">Partnerek, támogatók</a>
+                    </li>
+                    <li><a href=".html">Pályázatok</a>
+                        <ul class="menu vertical nested">
+                            <li > <a href="aktualis_palyazatok.html">Aktuális pályázatok</a></li>
+                            <li ><a href="vallalati_osztondij_program.html">Vállalati Ösztöndíj Program</a></li>
+                            <li ><a href="pro_tanentis_dij.html">Pro Tanentis Díj</a></li>
+                            <li ><a href="javits_osztondij.html">Javíts! ösztöndíj</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="galeria.html">Galéria</a>
+                    </li>
+                    <li><a href="elerhetosegek.html">Elérhetőségek</a>
+                    </li>
+                </ul> -->
+                <style type="text/css">
+                #menu a {
+                    padding: 0.3rem 0 0.3rem 0;
+                }
+                </style>
+                <p class="text-center">
+                    <img src="assets/img/protalentis_logo.jpg"><br>
+                    Pro Talentis Universitatis Alapítvány
+                </p>
+                <ul id="menu" class="vertical menu">
+                    <li  class="is-active" >
+                        <a class="" href="index.html">Főoldal</a>
+                        <span class="hide">Főoldal</span>
+                    </li>
+                    <li >
+                        <a class="hide" href="alapitvany.html">Az alapítványról</a>
+                        <span class="">Az alapítványról</span>
+                        <ul class="menu vertical nested">
+                            <li > <a href="celkituzes.html">Célkitűzés</a></li>
+                            <li ><a href="tevekenyseg.html">Tevékenység</a></li>
+                            <li ><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+                        </ul>
+                    </li>
+                    <li >
+                        <a class="" href="bemutatkozas.html">Az SZTE Junior Akadémia</a>
+                        <span class="hide">Az SZTE Junior Akadémia</span>
+                    </li>
+                    <li >
+                        <a class="" href="szegedi_tehetseggondozo_tanacs.html">A Szegedi Tehetséggondozó Tanács</a>
+                        <span class="hide">A Szegedi Tehetséggondozó Tanács</span>
+                    </li>
+                    <li >
+                        <a class="" href="partnerek.html">Partnerek, támogatók</a>
+                        <span class="hide">Partnerek, támogatók</span>
+                    </li>
+                    <li >
+                        <a class="hide" href=".html">Pályázatok</a>
+                        <span class="">Pályázatok</span>
+                        <ul class="menu vertical nested">
+                            <li > <a href="aktualis_palyazatok.html">Aktuális pályázatok</a></li>
+                            <li ><a href="vallalati_osztondij_program.html">Vállalati Ösztöndíj Program</a></li>
+                            <li ><a href="pro_tanentis_dij.html">Pro Tanentis Díj</a></li>
+                            <li ><a href="javits_osztondij.html">Javíts! ösztöndíj</a></li>
+                        </ul>
+                    </li>
+                    <li >
+                        <a class="" href="galeria.html">Galéria</a>
+                        <span class="hide">Galéria</span>
+                    </li>
+                    <li >
+                        <a class="" href="elerhetosegek.html">Elérhetőségek</a>
+                        <span class="hide">Elérhetőségek</span>
+                    </li>
+                </ul>            </div>
+            <div class="cell medium-9 medium-cell-block-y">
+                <div class="callout primary">
+                    <p class="h5 text-center">Kérjük, adója 1 százalékával támogassa a Pro Talentis Universitatis Alapítványt, hogy a jövő tehetségei is lehetőséget kapjanak!<br><b>Adószám:18022067-2-06</b></p>
+                    <p class="text-center"> <a class="button warning" href="https://protalentisuni.shopstart.hu/" target="_blank" style="text-decoration: none;">Az Alapítvány webshopja itt</a></p>
+                    <p>A weboldalunkon található könyvekből származó bevételt tehetséggondozó programjainkra fordítjuk.
+                    </p>
+                    <p>Vásároljon könyvet és segítse a támogatásra érdemes egyetemi hallgatókat!
+                    </p>
+                    <p>Szívesen fogadunk tárgyi adományokat is (pl. festmények, könyvek stb.) jótékonysági célra,
+                        melyet a webshopon értékesíthetünk, majd a bevételt szintén tehetségek támogatására fordítjuk.
+                        Az adományokat előzetes egyeztetés után, kuratóriumi döntés alapján tudjuk fogadni.
+                    </p>
                 </div>
-              </div>
+                <h4 class="text-center">HÍREINK</h4>
+                <div class="card">
+                    <div class="card-divider">
+                        <strong>Top élelmiszermérnök 2026</strong> </div>
+                    <div class="card-section">
+                        <div class="grid-x grid-margin-x">
+                            <div class="cell small-12 ">
+                                <p><strong>A PRO TALENTIS UNIVERSITATIS ALAPÍTVÁNY pályázatot hirdet</strong></p>
+                                <p>a Top Élelemiszermérnök 2026 ösztöndíj elnyerésére az SZTE Mérnöki Kar VÉGZŐS Élelmiszermérnök hallgatói részére</p>
+                                <p><strong>Az ösztöndíj összege: 100 000 Ft</strong></p>
+                                <p>A pályázat célja a Szegedi Tudományegyetem Mérnöki Karának kimagasló tanulmányi és szakmai eredményeket elért élelmiszermérnök szakos végzős hallgatójának elismerése, további szakmai munkájának támogatása.</p>
+                                <p style="margin-bottom: 0;">Pályázatot adhatnak be a SZTE Mérnöki Karának élelmiszermérnök BSc és MSc szakos hallgatói, akik:</p>
+                                
+                                <ul>
+                                <li>ebben a szemeszterben sikeres záróvizsgát tettek,</li>
+                                <li>tudományos vagy sport eredményeket értek el.</li>
+                                </ul>
+                                <p><strong>A pályázatok beadási határideje: 2026. január 18., 23:59</strong></p>
+                                <p>A pályázat benyújtásának módja:
+                                a mellékletek elküldése emailben a <a href="mailto:&#112;&#x72;&#111;&#116;&#x61;&#x6c;&#101;&#x6e;&#116;&#x69;&#x73;&#x75;&#x6e;&#x69;&#64;&#103;&#109;&#x61;&#x69;&#108;&#x2e;&#x63;&#x6f;&#109;">&#112;&#x72;&#111;&#116;&#x61;&#x6c;&#101;&#x6e;&#116;&#x69;&#x73;&#x75;&#x6e;&#x69;&#64;&#103;&#109;&#x61;&#x69;&#108;&#x2e;&#x63;&#x6f;&#109;</a> címre. Az email tárgyában kérjük a pályázat nevét feltüntetni. A mellékleteket pdf formában, saját névvel ellátva kérjük feltölteni. (pl. CV_Minta Áron_2025)</p>
+                                <p style="margin-bottom: 0;">
+                                A pályázat kötelező mellékletei:
+                                </p>
+                                
+                                <ul>
+                                <li>szakmai önéletrajz</li>
+                                <li>motivációs levél</li>
+                                <li>tanulmányi eredmény igazolása</li>
+                                </ul>
+                                <p style="margin-bottom: 0;">
+                                A pályázat elbírálása során előnyt jelent:
+                                </p>
+                                
+                                <ul>
+                                <li>témavezető ajánlása</li>
+                                <li>tudományos diákköri tevékenység, demonstrátori tevékenység</li>
+                                <li>korábban elnyert ösztöndíjak</li>
+                                <li>tudományos publikációk, konferencia részvétel</li>
+                                <li>középfokú szakmai vagy felsőfokú angol nyelvvizsga</li>
+                                <li>kiemelkedő sport-, művészeti vagy közéleti tevékenység</li>
+                                </ul>
+                                <p>A pályázattal kapcsolatos további felvilágosítás kérhető telefonon (+36 62 544 696) vagy e-mailben (<a href="mailto:&#x70;&#x72;&#111;&#x74;&#97;&#108;&#101;&#110;&#116;&#x69;&#115;&#x75;&#110;&#105;&#x40;&#103;&#109;&#x61;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;">&#x70;&#x72;&#111;&#x74;&#97;&#108;&#101;&#110;&#116;&#x69;&#115;&#x75;&#110;&#105;&#x40;&#103;&#109;&#x61;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</a>).</p>
+                                
+                                
+                                
+                                
+                                
+                                
+                                 
+                                
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="grid-x grid-margin-x ">
+                            <div class="cell auto">
+                            </div>
+                            <div class="cell small-12 medium-4">
+                                <a class="button small expanded" href="assets/pdf/top-elelmiszermernok-2026.pdf" target="_blank">PÁLYÁZAT ADATLAP LETÖLTÉSE</a>
+                            </div>
+                            <div class="cell auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-divider">
+                        <strong>Tanulmányi ösztöndíjpályázat kosárlabdázóknak</strong> </div>
+                    <div class="card-section">
+                        <div class="grid-x grid-margin-x">
+                            <div class="cell small-12 ">
+                                
+                                
+                                <p>Az SZTE Junior Akadémia a Pro Talentis Universitatis Alapítvánnyal együttműködve </p>
+                                <p class="text-center"> <b>tanulmányi ösztöndíjpályázatot hirdet</b> </p> 
+                                
+                                <p>felsőoktatási tanulmányokat folytató, kiváló sportteljesítmény mellett jó tanulmányi eredménnyel is rendelkező, élvonalbeli kosárlabdázóknak a 2025/2026 tanévre. </p>
+                                <p style="margin-bottom:0">A pályázat benyújtásának feltételei és az ösztöndíjra jogosultak köre:
+                                </p>
+                                
+                                <ul>
+                                <li>Aktív hallgatói jogviszony megléte a támogatás folyósításakor </li>
+                                <li>A pályázó hallgató az SZTE nevét viselő sportszervezetben, szakosztályban sportol, heti rendszerességgel részt vesz az egyesület, szakosztály munkájában. </li>
+                                </ul>
+                                <p><strong>Az ösztöndíj mértéke:</strong> a Tanács döntése alapján max. 150.000 Ft/hó. </p>
+                                <p><strong>A pályázat benyújtásának módja:</strong> <br>Az adatlapot és az alábbiakban felsorolt mellékleteket emailben kell benyújtani a <a href="mailto:&#x6a;&#x75;&#x6e;&#x69;&#111;&#x72;&#97;&#107;&#97;&#x64;&#x65;&#x6d;&#x69;&#97;&#64;&#x73;&#x7a;&#x74;&#x65;&#46;&#104;&#x75;">&#x6a;&#x75;&#x6e;&#x69;&#111;&#x72;&#97;&#107;&#97;&#x64;&#x65;&#x6d;&#x69;&#97;&#64;&#x73;&#x7a;&#x74;&#x65;&#46;&#104;&#x75;</a> email címre: </p>
+                                <ul>
+                                <li>Pályázati adatlap </li>
+                                <li>kiállított aktív hallgatói jogviszony igazolás </li>
+                                <li>Egyesület, szakosztály vezetőjének írásbeli támogató nyilatkozata </li>
+                                <li>Korábbi versenyeredmények igazolása </li>
+                                </ul>
+                                <p><strong>A pályázatok benyújtási határideje:</strong> 2025. október 10.  </p>
+                                <p><strong>A pályázatok elbírálásának határideje:</strong> 2025. október 17. </p>
+                                <p>A pályázattal kapcsolatos további információ <br>telefonon <a href="tel:+3662544696">+36 62 544 696</a>,<br>vagy e-mailben <a href="mailto:&#115;&#122;&#x69;&#x72;&#x6f;&#x6d;&#x69;&#46;&#x73;&#122;&#x6f;&#x6e;&#106;&#x61;&#64;&#x73;&#122;&#x74;&#101;&#x2e;&#104;&#117;">&#115;&#122;&#x69;&#x72;&#x6f;&#x6d;&#x69;&#46;&#x73;&#122;&#x6f;&#x6e;&#106;&#x61;&#64;&#x73;&#122;&#x74;&#101;&#x2e;&#104;&#117;</a> kérhető. </p>
+                                
+                                
+                                
+                                
+                                 
+                                
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="grid-x grid-margin-x ">
+                            <div class="cell auto">
+                            </div>
+                            <div class="cell small-12 medium-4">
+                                <a class="button small expanded" href="assets/pdf/kivalo_sportolo_palyazati_adatlap_2025.pdf" target="_blank">PÁLYÁZAT ADATLAP LETÖLTÉSE</a>
+                            </div>
+                            <div class="cell auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-divider">
+                        <strong>Pályázati felhívás</strong> </div>
+                    <div class="card-section">
+                        <div class="grid-x grid-margin-x">
+                            <div class="cell small-12 ">
+                                
+                                
+                                
+                                
+                                <p><strong>A PRO TALENTIS UNIVERSITATIS ALAPÍTVÁNY</strong> 
+                                pályázatot hirdet</p>
+                                <p><strong>Nemzetközi tanulmányi csapatverseny</strong> 
+                                támogatására</p>
+                                <p>Pályázatot nyújthat be az, aki megfelel az alábbi feltételek mindegyikének:</p>
+                                <p>Eredményesen pályázhat az az SZTE Junior Akadémia valamelyik partneriskolájában tanuló csapat, amely rangos haza versenyen elért eredményével jogot szerzett nemzetközi megmérettetésre, és a jövő tehetségeként vállalja a további együttműködést az SZTE Junior Akadémiával.</p>
+                                <p><strong>A pályázat benyújtási határideje:</strong> 2025. augusztus 28.</p>
+                                <p><strong>Az ösztöndíj összege: 250 000 Ft</strong></p>
+                                <p style="margin-bottom: 0;">A pályázat benyújtásának módja:</p>
+                                
+                                <ul>
+                                <li>   Önéletrajz</li>
+                                <li>   Motivációs levél </li>
+                                <li>   Pályázati adatlap</li>
+                                </ul>
+                                <p>Személyesen: 6720 Szeged, Dugonics tér 13.<br>
+                                Emailben: <a href="mailto:&#115;&#x7a;&#x69;&#114;&#x6f;&#x6d;&#x69;&#46;&#115;&#122;&#x6f;&#x6e;&#106;&#x61;&#64;&#115;&#122;&#x74;&#x65;&#46;&#104;&#x75;">&#115;&#x7a;&#x69;&#114;&#x6f;&#x6d;&#x69;&#46;&#115;&#122;&#x6f;&#x6e;&#106;&#x61;&#64;&#115;&#122;&#x74;&#x65;&#46;&#104;&#x75;</a></p>
+                                
+                                
+                                 
+                                
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="grid-x grid-margin-x ">
+                            <div class="cell auto">
+                            </div>
+                            <div class="cell small-12 medium-4">
+                                <a class="button small expanded" href="assets/pdf/palyazati_felhiv_nemz_tan_csapatvers_tamogatasra_2025.pdf" target="_blank">PÁLYÁZAT LETÖLTÉSE</a>
+                            </div>
+                            <div class="cell auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-divider">
+                        <strong>Pályázat tehetséggondozásban aktív SZTE munkatársak továbbképzési támogatására a 2024/2025. tanév második félévére</strong> </div>
+                    <div class="card-section">
+                        <div class="grid-x grid-margin-x">
+                            <div class="cell small-12 ">
+                                
+                                
+                                
+                                
+                                
+                                <p>Az SZTE Junior Akadémia a Pro Talentis Universitatis Alapítvánnyal együttműködve</p>
+                                <p><strong>pályázatot hirdet</strong></p>
+                                <p>a tehetséggondozásban aktív SZTE munkatársak továbbképzési támogatására,
+                                a 2024/2025. tanév második félévére.</p>
+                                <p>A pályázat benyújtásának feltételei és az ösztöndíjra jogosultak köre:</p>
+                                <ul>
+                                <li>aktív részvétel a Szegedi Tehetséggondozó Tanács, a Pro Talentis Universitatis Alapítvány és az SZTE Junior Akadémia programjainak koordinálásában.</li>
+                                <li>közreműködés az egyetemi továbbtanulást elősegítő programok szervezésében.</li>
+                                </ul>
+                                <p>Az ösztöndíj mértéke: a kuratórium döntése alapján<br>
+                                <strong>30.000 – 100.000 Ft</strong></p>
+                                <p>A pályázat benyújtásának módja:<br>
+                                Az alább felsorolt mellékleteket emailben kell benyújtani a <a href="mailto:&#106;&#117;&#x6e;&#x69;&#111;&#x72;&#x61;&#107;&#97;&#x64;&#x65;&#109;&#105;&#97;&#x40;&#x73;&#122;&#x74;&#101;&#46;&#x68;&#117;">&#106;&#117;&#x6e;&#x69;&#111;&#x72;&#x61;&#107;&#97;&#x64;&#x65;&#109;&#105;&#97;&#x40;&#x73;&#122;&#x74;&#101;&#46;&#x68;&#117;</a> címre.<br></p>
+                                <ul>
+                                <li>rövid szakmai önéletrajz (Europass minta alapján)</li>
+                                <li>rövid motivációs levél a pályázat feltételeinek megfelelően</li>
+                                </ul>
+                                <p><strong>A pályázatok benyújtási határideje:</strong><br>
+                                2025. április 24.</p>
+                                <p><strong>A pályázatok elbírálásának határideje:</strong><br>
+                                2025. április 28.</p>
+                                <p><strong>Prof. Dr. Badó Attila</strong><br>
+                                a Pro Talentis Universitatis Alapítvány kuratóriumi elnöke</p>
+                                
+                                 
+                                
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="grid-x grid-margin-x ">
+                            <div class="cell auto">
+                            </div>
+                            <div class="cell small-12 medium-4">
+                                <a class="button small expanded" href="assets/pdf/palyazati_felhivas_Pro-T_tovabbkepzesi_tamogatas_2025.pdf" target="_blank">PÁLYÁZAT LETÖLTÉSE</a>
+                            </div>
+                            <div class="cell auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-divider">
+                        <strong>Kiváló sportoló pályázat kosárlabdázóknak 2023–2024</strong> </div>
+                    <div class="card-section">
+                        <div class="grid-x grid-margin-x">
+                            <div class="cell small-12 ">
+                                
+                                
+                                
+                                
+                                
+                                
+                                <p>Az SZTE Junior Akadémia a Pro Talentis Universitatis Alapítvánnyal együttműködve</p>
+                                <p><strong>pályázatot hirdet</strong></p>
+                                <p>felsőoktatási tanulmányokat folytató, kiváló sportteljesítménnyel rendelkező, élvonalbeli kosárlabdázóknak a 2023/2024. tanévre.</p>
+                                <p>A pályázat benyújtásának feltételei és az ösztöndíjra jogosultak köre:</p>
+                                <ul>
+                                <li>Aktív hallgatói jogviszony megléte a támogatás folyósításakor</li>
+                                <li>A pályázó hallgató az SZTE nevét viselő sportszervezetben, szakosztályban sportol, heti rendszerességgel részt vesz az egyesület, szakosztály munkájában.</li>
+                                </ul>
+                                <p><strong>Az ösztöndíj mértéke: a Tanács döntése alapján max. 150.000 Ft/hó A pályázat benyújtásának módja: Az adatlapot és az alábbiakban felsorolt mellékleteket emailben kell benyújtani.</strong></p>
+                                <ul>
+                                <li>Pályázati adatlap</li>
+                                <li>kiállított aktív hallgatói jogviszony igazolás</li>
+                                <li>Egyesület, szakosztály vezetőjének írásbeli támogató nyilatkozata</li>
+                                <li>Korábbi versenyeredmények igazolása</li>
+                                </ul>
+                                <p><strong>A pályázatok benyújtási határideje: október 10. napja.</strong> A pályázatok elbírálásának határideje: A pályázat eredményéről legkésőbb <strong>2023. október 12. napjáig</strong> tájékoztatjuk a pályázókat. A pályázatot a <a href="mailto:&#106;&#x75;&#x6e;&#105;&#111;&#114;&#x61;&#107;&#x61;&#100;&#101;&#x6d;&#105;&#97;&#x40;&#x73;&#x7a;&#x74;&#101;&#46;&#x68;&#x75;">&#106;&#x75;&#x6e;&#105;&#111;&#114;&#x61;&#107;&#x61;&#100;&#101;&#x6d;&#105;&#97;&#x40;&#x73;&#x7a;&#x74;&#101;&#46;&#x68;&#x75;</a> email címre kell benyújtani.</p>
+                                <p>A pályázattal kapcsolatos további információ <em>telefonon (62/544-696), vagy e-mailben (<a href="mailto:&#112;&#114;&#111;&#x74;&#x61;&#108;&#x65;&#x6e;&#116;&#105;&#x73;&#x75;&#110;&#x69;&#64;&#x67;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#x6f;&#109;">&#112;&#114;&#111;&#x74;&#x61;&#108;&#x65;&#x6e;&#116;&#105;&#x73;&#x75;&#110;&#x69;&#64;&#x67;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#x6f;&#109;</a>)</em> kérhető.</p>
+                                <p>Prof. Dr. Badó Attila a Pro Talentis Universitatis Alapítvány kuratóriumi elnöke</p>
+                                 
+                                
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="grid-x grid-margin-x ">
+                            <div class="cell auto">
+                            </div>
+                            <div class="cell small-12 medium-4">
+                                <a class="button small expanded" href="assets/pdf/kivalo_sportolo_kosarlabdazo_palyazat_2023.pdf" target="_blank">Pályázat letöltése</a>
+                            </div>
+                            <div class="cell auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-divider">
+                        <strong>Középiskolás tehetségek mentora ösztöndíj</strong> </div>
+                    <div class="card-section">
+                        <div class="grid-x grid-margin-x">
+                            <div class="cell small-12 ">
+                                
+                                
+                                
+                                
+                                
+                                
+                                <p><strong>Pályázati felhívás</strong></p>
+                                <p>A Pro Talentis Universitatis Alapítvány
+                                „Középiskolás Tehetségek Mentora” ösztöndíjpályázatot
+                                hirdet tehetséggondozó tevékenységet végző középiskolai pedagógusok részére
+                                a 2022/2023. tanév első félévére.</p>
+                                <p>A pályázatok benyújtási határideje:<br>
+                                <strong>2023. február 5.</strong></p>
+                                <p><strong>Az ösztöndíj mértéke:</strong><br>
+                                a kuratórium döntése alapján<br>
+                                <strong>egyszeri 100.000 Ft</strong>.</p>
+                                 
+                                
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="grid-x grid-margin-x ">
+                            <div class="cell auto">
+                            </div>
+                            <div class="cell small-12 medium-4">
+                                <a class="button small expanded" href="assets/pdf/középisk_tehets_mentora_pályáz_felhív_2022_2023.pdf" target="_blank">További információ</a>
+                            </div>
+                            <div class="cell auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-divider">
+                        <strong>Kiváló sportoló pályázat kosárlabdázóknak 2022–2023</strong> </div>
+                    <div class="card-section">
+                        <div class="grid-x grid-margin-x">
+                            <div class="cell small-12 ">
+                                
+                                
+                                
+                                
+                                
+                                
+                                 
+                                <p>Az SZTE Junior Akadémia a Pro Talentis Universitatis Alapítvánnyal együttműködve pályázatot hirdet felsőoktatási tanulmányokat folytató, kiváló sportteljesítménnyel rendelkező, élvonalbeli kosárlabdázóknak a 2022/2023. tanévre. <strong>A pályázat benyújtásának feltételei és az ösztöndíjra jogosultak köre:</strong></p>
+                                <ul>
+                                <li>Aktív hallgatói jogviszony megléte a támogatás folyósításakor</li>
+                                <li>A pályázó hallgató az SZTE nevét viselő sportszervezetben, szakosztályban sportol, heti rendszerességgel részt vesz az egyesület, szakosztály munkájában.</li>
+                                </ul>
+                                <p><em><strong>Az ösztöndíj mértéke:</strong></em> <strong>a Tanács döntése alapján max. 150 000 Ft/hó</strong><br><strong>A pályázat benyújtásának módja: Az adatlapot</strong> és az alábbiakban felsorolt <strong>mellékleteket</strong> emailben kell benyújtani.</p>
+                                <ul>
+                                <li>Pályázati adatlap</li>
+                                <li>kiállított aktív hallgatói jogviszony igazolás</li>
+                                <li>Egyesület, szakosztály vezetőjének írásbeli támogató nyilatkozata</li>
+                                <li>Korábbi versenyeredmények igazolása</li>
+                                </ul>
+                                <p><strong>A pályázatok benyújtási határideje: 2022. szeptember 20. napja.</strong></p>
+                                <p>A pályázatok elbírálásának határideje:
+                                A pályázat eredményéről legkésőbb 2022. szeptember 27. napjáig tájékoztatjuk a pályázókat.
+                                A pályázatot a <a href="mailto:&#106;&#x75;&#110;&#x69;&#x6f;&#x72;&#x61;&#x6b;&#97;&#100;&#101;&#109;&#x69;&#97;&#x40;&#x73;&#x7a;&#116;&#101;&#x2e;&#x68;&#x75;">&#106;&#x75;&#110;&#x69;&#x6f;&#x72;&#x61;&#x6b;&#97;&#100;&#101;&#109;&#x69;&#97;&#x40;&#x73;&#x7a;&#116;&#101;&#x2e;&#x68;&#x75;</a> email címre kell benyújtani.
+                                A pályázattal kapcsolatos további információ Kemény Zsanett koordinátortól kérhető
+                                telefonon (62/544-696),
+                                e-mailben (<a href="mailto:&#107;&#101;&#x6d;&#101;&#x6e;&#x79;&#x2e;&#122;&#x73;&#97;&#x6e;&#101;&#116;&#x74;&#64;&#x73;&#122;&#x74;&#101;&#x2e;&#104;&#x75;">&#107;&#101;&#x6d;&#101;&#x6e;&#x79;&#x2e;&#122;&#x73;&#97;&#x6e;&#101;&#116;&#x74;&#64;&#x73;&#122;&#x74;&#101;&#x2e;&#104;&#x75;</a>).</p>
+                                <p>Prof. Dr. Badó Attila
+                                a Pro Talentis Universitatis Alapítvány kuratóriumi elnöke</p>
+                                
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="grid-x grid-margin-x hide">
+                            <div class="cell auto">
+                            </div>
+                            <div class="cell small-12 medium-4">
+                                <a class="button small expanded" href="assets/pdf/" target="_blank"></a>
+                            </div>
+                            <div class="cell auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-divider">
+                        <strong>Vállalati ösztöndíjprogram</strong> </div>
+                    <div class="card-section">
+                        <div class="grid-x grid-margin-x">
+                            <div class="cell small-12 ">
+                                
+                                
+                                
+                                
+                                
+                                
+                                 
+                                
+                                <p><a href="https://juniorakademia.szte.hu/osztondijak/#vallalati">További információk</a></p>
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="grid-x grid-margin-x hide">
+                            <div class="cell auto">
+                            </div>
+                            <div class="cell small-12 medium-4">
+                                <a class="button small expanded" href="assets/pdf/" target="_blank"></a>
+                            </div>
+                            <div class="cell auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-divider">
+                        <strong>Ösztöndíj joghallgatók számára 2022</strong> </div>
+                    <div class="card-section">
+                        <div class="grid-x grid-margin-x">
+                            <div class="cell small-12 ">
+                                
+                                
+                                
+                                
+                                
+                                
+                                 
+                                
+                                
+                                
+                                <p>A Pro Talentis Universitatis Alapítvány <em>ösztöndíjat hirdet joghallgatók számára, akik a jogösszehasonlítás művelése területén kiemelkedő teljesítményt nyújtottak</em>.</p>
+                                <p>Pályázati feltételek:</p>
+                                <ul>
+                                <li>A Jogrendszerek Világa kurzus sikeres teljesítése</li>
+                                <li>A Jogrendszerek Világa kurzus oktatójának ajánlása</li>
+                                <li>Jelesre értékelt tanulmány készítése jogösszehasonlító módszerrel</li>
+                                </ul>
+                                <p>Az ösztöndíj maximális összege <strong>5000 Ft</strong></p>
+                            </div>
+                        </div>
+                        <div class="grid-x grid-margin-x hide">
+                            <div class="cell auto">
+                            </div>
+                            <div class="cell small-12 medium-4">
+                                <a class="button small expanded" href="assets/pdf/" target="_blank"></a>
+                            </div>
+                            <div class="cell auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-divider">
+                        <strong>Top élelmiszermérnök 2021</strong> </div>
+                    <div class="card-section">
+                        <div class="grid-x grid-margin-x">
+                            <div class="cell small-12 ">
+                                
+                                
+                                
+                                
+                                
+                                
+                                 
+                                
+                                
+                                
+                                <p>A Pro Talentis Universitatis Alapítvány meghirdeti a TOP ÉLELMISZERMÉRNÖK 2021 ösztöndíjat az SZTE Mérnöki Karának élelmiszermérnök BSc szakos hallgatói számára.</p>
+                                <p>Pályázati határidő: 2021. január 10.</p>
+                                <p>Az ösztöndíj a Mérnöki Karon oktató Dr. Véha Antal felajánlása alapján jöhetett létre.</p>
+                            </div>
+                        </div>
+                        <div class="grid-x grid-margin-x ">
+                            <div class="cell auto">
+                            </div>
+                            <div class="cell small-12 medium-4">
+                                <a class="button small expanded" href="assets/pdf/elelmiszermernok_palyazati-felhivas_2021.pdf" target="_blank">További információ</a>
+                            </div>
+                            <div class="cell auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Select Box</label>
-                <select>
-                  <option value="husker">Husker</option>
-                  <option value="starbuck">Starbuck</option>
-                  <option value="hotdog">Hot Dog</option>
-                  <option value="apollo">Apollo</option>
-                </select>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-6 medium-6 cell">
-                <label>Choose Your Favorite</label>
-                <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-                <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-              </div>
-              <div class="large-6 medium-6 cell">
-                <label>Check these out</label>
-                <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-                <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Textarea Label</label>
-                <textarea placeholder="small-12.cell"></textarea>
-              </div>
-            </div>
-          </form>
         </div>
-
-        <div class="large-4 medium-4 cell">
-          <h5>Try one of these buttons:</h5>
-          <p><a href="#" class="button">Simple Button</a><br/>
-            <a href="#" class="success button">Success Btn</a><br/>
-            <a href="#" class="alert button">Alert Btn</a><br/>
-            <a href="#" class="secondary button">Secondary Btn</a></p>
-          <div class="callout">
-            <h5>So many components, girl!</h5>
-            <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-            <a href="https://get.foundation/sites/docs/" class="small button">Go to Foundation Docs</a>
-          </div>
-        </div>
-      </div>
     </div>
+<!--     <div class="cell shrink footer">
+        <p>Ide majd elérhetőségek</p>    </div> -->
+</div> <script src="assets/js/app.js"></script>
+    <!-- Automatikus frissítés script -->
+    <script>
+    (function() {
+        var CHECK_INTERVAL = 10000; // 10 másodperc
+        var VERSION_URL = 'version.json';
+        var currentVersion = null;
 
+        function checkVersion() {
+            var url = VERSION_URL + '?_=' + Date.now();
+            console.log('[version-check] Lekérés:', url);
 
-<script src="assets/js/app.js"></script>
+            fetch(url, { cache: 'no-store' })
+                .then(function(res) {
+                    console.log('[version-check] HTTP státusz:', res.status);
+                    if (!res.ok) return;
+                    return res.json();
+                })
+                .then(function(data) {
+                    if (!data || typeof data.version === 'undefined') {
+                        console.log('[version-check] Nincs "version" mező:', data);
+                        return;
+                    }
+
+                    var serverVersion = String(data.version);
+                    console.log('[version-check] Szerver verzió:', serverVersion,
+                        '| Jelenlegi verzió:', currentVersion);
+
+                    // első futás: csak eltároljuk, mi a mostani verzió
+                    if (currentVersion === null) {
+                        currentVersion = serverVersion;
+                        return;
+                    }
+
+                    // ha változott, reload
+                    if (serverVersion !== currentVersion) {
+                        console.log('[version-check] VERZIÓ VÁLTOZOTT → RELOAD');
+
+                        // cache-kerülős reload ugyanarra az oldalra
+                        var newUrl = window.location.pathname +
+                            '?v=' + encodeURIComponent(serverVersion) +
+                            '&_=' + Date.now() +
+                            window.location.hash;
+
+                        console.log('[version-check] Navigáció:', newUrl);
+                        window.location.assign(newUrl);
+                    }
+                })
+                .catch(function(err) {
+                    console.warn('[version-check] Hiba:', err);
+                });
+        }
+
+        checkVersion();
+        setInterval(checkVersion, CHECK_INTERVAL);
+    })();
+    </script>
+    <!-- /Automatikus frissítés script -->
 </body>
+
 </html>
